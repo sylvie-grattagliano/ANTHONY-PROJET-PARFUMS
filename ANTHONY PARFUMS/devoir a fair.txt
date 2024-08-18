@@ -1,0 +1,23 @@
+devoir anthony
+<?php
+/*$id =$_GET["id"] ?? 0;*/
+$nom = $_GET["nom"] ?? 0;
+$genre = $_GET["genre"] ?? 0;
+$alcool_degres = $_GET ["alcool_degres"] ?? 0;
+$couleur = $_GET ["couleur"] ?? 0;
+$quantite_ml = $_GET ["quantite_ml"] ?? 0;
+$createur = $_GET ["createur"] ?? 0;
+$prix = $_GET ["prix"] ?? 0;
+
+
+$database = new PDO();
+$query = $database->prepare("INSERT * TO parfums WHERE id = :idValues AND id = :idValues");
+$query->bindValue("idValues", $id);
+$query->bindValue("", $genre);
+$query->execute();
+
+$resultats = $query->fetchAll();
+
+//insert to AU LIEU DE SELECT CAR JE DOIS INSERER DANS MA BASE DE DONNEE
+
+("INSERT TO parfums WHERE sylvie = :idvalues AND  = :prixvalues");

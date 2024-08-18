@@ -1,0 +1,18 @@
+My SQL
+1 Créer une base de données ‘’parfum’’, listant les parfums avec :
+ID, prix, genre, nom, alcool, couleur, créateur (0 par défaut).
+Y ajouter 10 parfums de votre choix.
+Faire un dump de votre base de données et l’ajouter das le dossier de votre projet.
+2 Faire une page index.php qui présente votre parfumerie et y lister vos 10 parfums dans un tableau.
+Attention à avoir un CSS soigné§
+Chaque parfum doit correspondre à une ligne dans votre tableau et y lister ses 8 valeurs.
+3 Ajouter une page création.php
+Cette page comporte un formulaire, permettant d’ajouter un nouveau parfum en base de données.
+Ajouter des inputs correspondants aux champs, avec les types à respecter ( texte, nombres, minimum,...)
+Vérifier les valeurs et types avant d’ajouter en BDD
+4 Créer une table administrateurs, comportant :
+ID, pseudo, mot de passe, création.
+Y ajouter deux administrateurs
+5 Ajouter une page connexion.php, contenant un formulaire avec pseudo et MDP.
+Lorsque le formulaire est envoyé, regardez en BDD si il existe un utilisateur avec ces identifiants, si oui ,
+créer une session avec pseudo, et enregistrer les parfums créer avec ce speudo.
